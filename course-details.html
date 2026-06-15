@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduVerse | Course Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">E</span>
+          <span>EduVerse</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="index.html#categories">Categories</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+          <a class="btn btn-ghost" href="dashboard.html">Login</a>
+          <a class="btn btn-primary" href="checkout.html">Buy Now</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="course-details-hero section">
+        <div class="container details-hero-grid">
+          <div id="course-hero-content"></div>
+          <aside class="purchase-card glass-card" id="purchase-card"></aside>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container details-grid">
+          <div class="details-main">
+            <div class="glass-card detail-block">
+              <h2>Course Preview</h2>
+              <video controls poster="https://images.unsplash.com/photo-1516321497487-e288fb19713f?auto=format&fit=crop&w=900&q=80" class="detail-video">
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+              </video>
+            </div>
+            <div class="glass-card detail-block">
+              <h2>What You'll Learn</h2>
+              <ul class="detail-list" id="learning-points"></ul>
+            </div>
+            <div class="glass-card detail-block">
+              <h2>Curriculum</h2>
+              <div class="faq-list" id="curriculum"></div>
+            </div>
+            <div class="glass-card detail-block">
+              <h2>Requirements</h2>
+              <ul class="detail-list" id="requirements"></ul>
+            </div>
+            <div class="glass-card detail-block">
+              <h2>Instructor</h2>
+              <div id="instructor-profile"></div>
+            </div>
+            <div class="glass-card detail-block">
+              <h2>Reviews & Ratings</h2>
+              <div id="reviews"></div>
+            </div>
+            <div class="glass-card detail-block">
+              <h2>FAQ</h2>
+              <div class="faq-list" id="course-faq"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <button class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+  </body>
+</html>

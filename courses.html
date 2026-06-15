@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduVerse | Course Catalog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">E</span>
+          <span>EduVerse</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="courses.html" class="active">Courses</a>
+          <a href="index.html#categories">Categories</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+          <a class="btn btn-ghost" href="dashboard.html">Login</a>
+          <a class="btn btn-primary" href="checkout.html">Cart</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero section">
+        <div class="container page-hero-content">
+          <p class="eyebrow">Explore Catalog</p>
+          <h1>Find the course that fits your next career move</h1>
+          <p>Search, filter, and compare programs designed for modern professionals.</p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="filter-panel glass-card">
+            <div class="filter-group">
+              <label for="search-input">Search</label>
+              <input id="search-input" type="text" placeholder="Search courses" />
+            </div>
+            <div class="filter-group">
+              <label for="category-filter">Category</label>
+              <select id="category-filter">
+                <option value="all">All</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="level-filter">Level</label>
+              <select id="level-filter">
+                <option value="all">All</option>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="price-filter">Price</label>
+              <select id="price-filter">
+                <option value="all">All</option>
+                <option value="free">Free</option>
+                <option value="paid">Paid</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="rating-filter">Rating</label>
+              <select id="rating-filter">
+                <option value="all">All</option>
+                <option value="4">4+</option>
+                <option value="4.5">4.5+</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="sort-filter">Sort</label>
+              <select id="sort-filter">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="rating">Highest Rated</option>
+              </select>
+            </div>
+          </div>
+          <div class="course-grid" id="courses-grid"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand"><span class="brand-mark">E</span><span>EduVerse</span></a>
+          <p>Premium learning experiences for ambitious minds.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="courses.html">Courses</a>
+          <a href="index.html#categories">Categories</a>
+          <a href="index.html#about">About</a>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <a href="index.html#contact">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+  </body>
+</html>

@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="EduVerse is a premium online learning platform for modern, practical, and career-focused courses."
+    />
+    <title>EduVerse | Learn in-demand skills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-loader" aria-hidden="true">
+      <div class="loader-ring"></div>
+    </div>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">E</span>
+          <span>EduVerse</span>
+        </a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="nav-links">
+          <a href="index.html" class="active">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="#categories">Categories</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+          <a class="btn btn-ghost" href="dashboard.html">Login</a>
+          <a class="btn btn-primary" href="courses.html">Sign Up</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="eyebrow">Learn from industry leaders</div>
+            <h1>Learn In-Demand Skills and Build Your Future</h1>
+            <p>
+              Join thousands of learners worldwide and gain practical knowledge from industry experts.
+            </p>
+            <div class="hero-actions">
+              <a href="courses.html" class="btn btn-primary">Explore Courses</a>
+              <a href="dashboard.html" class="btn btn-secondary">Start Learning</a>
+            </div>
+            <div class="trust-badges">
+              <span><i class="fa-solid fa-star"></i> 4.9/5 average rating</span>
+              <span><i class="fa-solid fa-users"></i> 50k+ learners</span>
+              <span><i class="fa-solid fa-shield-halved"></i> 30-day guarantee</span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <div class="hero-card glass-card">
+              <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=900&q=80" alt="Students learning online" />
+              <div class="floating-badge">
+                <strong>+4.9</strong>
+                <span>Student Satisfaction</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-section">
+        <div class="container stats-grid">
+          <div class="stat-card glass-card">
+            <strong>50,000+</strong>
+            <span>Students</span>
+          </div>
+          <div class="stat-card glass-card">
+            <strong>500+</strong>
+            <span>Courses</span>
+          </div>
+          <div class="stat-card glass-card">
+            <strong>100+</strong>
+            <span>Expert Instructors</span>
+          </div>
+          <div class="stat-card glass-card">
+            <strong>95%</strong>
+            <span>Success Rate</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="courses">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Featured Courses</p>
+              <h2>Discover courses built for real-world success</h2>
+            </div>
+            <a href="courses.html" class="text-link">View all courses</a>
+          </div>
+          <div class="course-grid" id="featured-courses"></div>
+        </div>
+      </section>
+
+      <section class="section" id="categories">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Popular Categories</p>
+              <h2>Choose your next learning adventure</h2>
+            </div>
+          </div>
+          <div class="category-grid">
+            <a href="courses.html" class="category-card glass-card">
+              <i class="fa-solid fa-code"></i>
+              <h3>Web Development</h3>
+            </a>
+            <a href="courses.html" class="category-card glass-card">
+              <i class="fa-solid fa-chart-line"></i>
+              <h3>Data Science</h3>
+            </a>
+            <a href="courses.html" class="category-card glass-card">
+              <i class="fa-solid fa-robot"></i>
+              <h3>AI & ML</h3>
+            </a>
+            <a href="courses.html" class="category-card glass-card">
+              <i class="fa-solid fa-shield-halved"></i>
+              <h3>Cyber Security</h3>
+            </a>
+            <a href="courses.html" class="category-card glass-card">
+              <i class="fa-solid fa-pen-ruler"></i>
+              <h3>UI/UX Design</h3>
+            </a>
+            <a href="courses.html" class="category-card glass-card">
+              <i class="fa-solid fa-briefcase"></i>
+              <h3>Business</h3>
+            </a>
+            <a href="courses.html" class="category-card glass-card">
+              <i class="fa-solid fa-bullhorn"></i>
+              <h3>Marketing</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container why-grid">
+          <div>
+            <p class="eyebrow">Why Choose EduVerse</p>
+            <h2>Learning that feels personal, practical, and inspiring</h2>
+            <p>
+              Our expert-led programs are designed to help you build skills that matter, with flexible schedules and project-based learning.
+            </p>
+          </div>
+          <div class="benefits-grid">
+            <article class="benefit-card glass-card">
+              <i class="fa-solid fa-infinity"></i>
+              <h3>Lifetime Access</h3>
+              <p>Revisit lessons anytime and learn at your own pace.</p>
+            </article>
+            <article class="benefit-card glass-card">
+              <i class="fa-solid fa-user-graduate"></i>
+              <h3>Expert Mentors</h3>
+              <p>Gain insights from leaders with real industry experience.</p>
+            </article>
+            <article class="benefit-card glass-card">
+              <i class="fa-solid fa-certificate"></i>
+              <h3>Certificates</h3>
+              <p>Showcase your achievements with verified completion badges.</p>
+            </article>
+            <article class="benefit-card glass-card">
+              <i class="fa-solid fa-users"></i>
+              <h3>Community Support</h3>
+              <p>Engage with peers and mentors in a thriving learning community.</p>
+            </article>
+            <article class="benefit-card glass-card">
+              <i class="fa-solid fa-clock"></i>
+              <h3>Flexible Learning</h3>
+              <p>Study from any device and fit learning into your schedule.</p>
+            </article>
+            <article class="benefit-card glass-card">
+              <i class="fa-solid fa-diagram-project"></i>
+              <h3>Project-Based Learning</h3>
+              <p>Build practical portfolios with real-world assignments.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section testimonials-section">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">Testimonials</p>
+              <h2>Learners trust EduVerse to grow faster</h2>
+            </div>
+          </div>
+          <div class="testimonial-slider glass-card">
+            <button class="slider-btn prev" aria-label="Previous testimonial"><i class="fa-solid fa-chevron-left"></i></button>
+            <div class="testimonial-track">
+              <article class="testimonial-card active">
+                <p>“The teaching quality is exceptional. I landed my first freelance project within weeks.”</p>
+                <div class="testimonial-author">
+                  <strong>Maya Chen</strong>
+                  <span>UI/UX Designer</span>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <p>“The practical projects helped me transition into a data science role confidently.”</p>
+                <div class="testimonial-author">
+                  <strong>Daniel Brooks</strong>
+                  <span>Data Analyst</span>
+                </div>
+              </article>
+              <article class="testimonial-card">
+                <p>“Every lesson feels intentional, polished, and directly applicable to my work.”</p>
+                <div class="testimonial-author">
+                  <strong>Priya Singh</strong>
+                  <span>Frontend Developer</span>
+                </div>
+              </article>
+            </div>
+            <button class="slider-btn next" aria-label="Next testimonial"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section faq-section" id="contact">
+        <div class="container faq-grid">
+          <div>
+            <p class="eyebrow">Frequently Asked Questions</p>
+            <h2>Everything you need to know before you begin</h2>
+          </div>
+          <div class="faq-list">
+            <details class="faq-item glass-card" open>
+              <summary>How do I enroll in a course?</summary>
+              <p>Choose a course, click enroll, and start learning immediately after checkout.</p>
+            </details>
+            <details class="faq-item glass-card">
+              <summary>Do I get a certificate?</summary>
+              <p>Yes, every completed course provides a downloadable certificate.</p>
+            </details>
+            <details class="faq-item glass-card">
+              <summary>Can I learn on mobile?</summary>
+              <p>Absolutely. All lessons are accessible on desktop, tablet, and mobile devices.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="section newsletter-section">
+        <div class="container newsletter-card glass-card">
+          <div>
+            <p class="eyebrow">Stay Inspired</p>
+            <h2>Subscribe to our newsletter for fresh learning ideas</h2>
+          </div>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Enter your email" required />
+            <button class="btn btn-primary" type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="brand">
+            <span class="brand-mark">E</span>
+            <span>EduVerse</span>
+          </a>
+          <p>Premium learning experiences for ambitious minds.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <a href="courses.html">Courses</a>
+          <a href="#categories">Categories</a>
+          <a href="#about">About</a>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <a href="#contact">Contact</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <div class="social-links">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+  </body>
+</html>

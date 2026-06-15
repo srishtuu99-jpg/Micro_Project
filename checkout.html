@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduVerse | Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="index.html" class="brand"><span class="brand-mark">E</span><span>EduVerse</span></a>
+        <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="index.html#categories">Categories</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+          <a class="btn btn-ghost" href="dashboard.html">Login</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container checkout-grid">
+          <div class="glass-card checkout-summary">
+            <h2>Order Summary</h2>
+            <div id="checkout-course"></div>
+            <div class="summary-line"><span>Subtotal</span><strong id="subtotal">$0</strong></div>
+            <div class="summary-line"><span>Discount</span><strong id="discount">$0</strong></div>
+            <div class="summary-line total"><span>Total</span><strong id="total-price">$0</strong></div>
+            <div class="coupon-box">
+              <input id="coupon-input" type="text" placeholder="Coupon code" />
+              <button id="apply-coupon" class="btn btn-secondary">Apply</button>
+            </div>
+          </div>
+          <div class="glass-card checkout-form-card">
+            <h2>Billing Details</h2>
+            <form id="checkout-form" class="checkout-form">
+              <div class="form-row">
+                <input type="text" placeholder="Full name" required />
+                <input type="email" placeholder="Email address" required />
+              </div>
+              <input type="text" placeholder="Address" required />
+              <div class="form-row">
+                <input type="text" placeholder="City" required />
+                <input type="text" placeholder="Postal code" required />
+              </div>
+              <div class="payment-options">
+                <label><input type="radio" name="payment" checked /> Credit card</label>
+                <label><input type="radio" name="payment" /> PayPal</label>
+                <label><input type="radio" name="payment" /> Bank transfer</label>
+              </div>
+              <button class="btn btn-primary btn-block" type="submit">Confirm Order</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="popup-overlay" id="order-popup" aria-hidden="true">
+      <div class="popup-card glass-card">
+        <i class="fa-solid fa-circle-check"></i>
+        <h3>Order Confirmed!</h3>
+        <p>Your course access has been unlocked.</p>
+        <a href="dashboard.html" class="btn btn-primary">Go to Dashboard</a>
+      </div>
+    </div>
+
+    <button class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+  </body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduVerse | Student Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-bar">
+        <a href="index.html" class="brand"><span class="brand-mark">E</span><span>EduVerse</span></a>
+        <button class="menu-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="courses.html">Courses</a>
+          <a href="index.html#categories">Categories</a>
+          <a href="index.html#about">About</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <button class="theme-toggle" aria-label="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+          <a class="btn btn-primary" href="index.html">Logout</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="dashboard-page">
+      <div class="container dashboard-layout">
+        <aside class="dashboard-sidebar glass-card">
+          <h3>Student Zone</h3>
+          <a class="active" href="#"><i class="fa-solid fa-table-columns"></i> Dashboard</a>
+          <a href="#"><i class="fa-solid fa-graduation-cap"></i> My Courses</a>
+          <a href="#"><i class="fa-solid fa-play"></i> Continue Learning</a>
+          <a href="#"><i class="fa-solid fa-heart"></i> Wishlist</a>
+          <a href="#"><i class="fa-solid fa-certificate"></i> Certificates</a>
+          <a href="#"><i class="fa-solid fa-bag-shopping"></i> Orders</a>
+          <a href="#"><i class="fa-solid fa-user"></i> Profile Settings</a>
+          <a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a>
+        </aside>
+        <section class="dashboard-main">
+          <div class="dashboard-overview">
+            <div class="stat-card glass-card">
+              <strong id="enrolled-count">3</strong>
+              <span>Courses Enrolled</span>
+            </div>
+            <div class="stat-card glass-card">
+              <strong id="learning-hours">18h</strong>
+              <span>Learning Hours</span>
+            </div>
+            <div class="stat-card glass-card">
+              <strong id="certificates-earned">1</strong>
+              <span>Certificates Earned</span>
+            </div>
+            <div class="stat-card glass-card">
+              <strong id="progress-percent">78%</strong>
+              <span>Progress</span>
+            </div>
+          </div>
+
+          <div class="glass-card detail-block">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">My Courses</p>
+                <h2>Continue where you left off</h2>
+              </div>
+            </div>
+            <div id="my-courses"></div>
+          </div>
+
+          <div class="glass-card detail-block learning-panel">
+            <div class="learning-player">
+              <video controls id="dashboard-video" class="detail-video">
+                <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4" />
+              </video>
+              <div class="playlist">
+                <h3>Course Playlist</h3>
+                <div id="playlist"></div>
+                <div class="lesson-actions">
+                  <button class="btn btn-secondary" id="prev-lesson">Previous</button>
+                  <button class="btn btn-primary" id="next-lesson">Next</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card detail-block">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Certificates</p>
+                <h2>Celebrate your progress</h2>
+              </div>
+              <button class="btn btn-primary" id="download-certificate">Download Certificate</button>
+            </div>
+          </div>
+
+          <div class="glass-card detail-block">
+            <div class="section-heading">
+              <div>
+                <p class="eyebrow">Profile Settings</p>
+                <h2>Keep your profile up to date</h2>
+              </div>
+            </div>
+            <form class="profile-form">
+              <div class="avatar-box">
+                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Profile" />
+                <input type="file" accept="image/*" />
+              </div>
+              <div class="form-row">
+                <input type="text" placeholder="Full name" value="Ava Thompson" />
+                <input type="email" placeholder="Email" value="ava@example.com" />
+              </div>
+              <input type="password" placeholder="New password" />
+              <button class="btn btn-primary" type="submit">Save Changes</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <button class="scroll-top" aria-label="Scroll to top"><i class="fa-solid fa-arrow-up"></i></button>
+  </body>
+</html>
